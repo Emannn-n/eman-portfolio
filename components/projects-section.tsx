@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { ExternalLink, Github, Loader2 } from "lucide-react"
+import { Loader2 } from "lucide-react"
 
 const projects = [
   {
@@ -146,23 +146,6 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                {/* Actions */}
-                <div className="flex gap-3 pt-4 border-t border-border">
-                  <button
-                    className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View ${project.title} on GitHub`}
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </button>
-                  <button
-                    className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View ${project.title} demo`}
-                  >
-                    <ExternalLink size={16} />
-                    <span>Demo</span>
-                  </button>
-                </div>
               </div>
             </motion.div>
           ))}
